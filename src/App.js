@@ -10,12 +10,14 @@ import Body from "./components/Body";
 import Error from "./components/Error";
 import Shimmer from "./components/Shimmer";
 
+
 // Lazy load components
 const About = lazy(() => import("./components/About"));
 const RestaurantMenu = lazy(() => import("./components/RestaurantMenu"));
 const Cart = lazy(() => import("./components/Cart"));
 const OrderPlaced = lazy(() => import("./components/Orderplaced"));
 const Help = lazy(() => import("./components/Help"));
+const LoginSignup = lazy(() => import("./components/LoginSignup"))
 
 const AppLayout = () => {
   return (
@@ -41,7 +43,7 @@ const appRouter = createBrowserRouter([
         path: "/about",
         element: (
           <Suspense fallback={<Shimmer />}>
-            <About name="Priya" />
+            <About name="Foodie" />
           </Suspense>
         ),
       },
@@ -74,6 +76,22 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<Shimmer />}>
             <OrderPlaced />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/login",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <LoginSignup /> // Update to use LoginSignup component
+          </Suspense>
+        ),
+      },
+      {
+        path: "/signup",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <LoginSignup /> // Reuse LoginSignup for signup
           </Suspense>
         ),
       },
