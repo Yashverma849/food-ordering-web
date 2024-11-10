@@ -34,7 +34,7 @@ To set up the Food Ordering App project locally, follow these steps:
 
 2. Navigate to the project directory:
     ```bash
-    cd food-ordering-app
+    cd food-ordering-web
     ```
 
 3. Install the required dependencies:
