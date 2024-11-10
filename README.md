@@ -4,11 +4,6 @@ This is a food ordering app project developed using ReactJS. The app aims to pro
 
 ![Home page](./imgs/Screenshot%20from%202023-07-08%2017-46-58.png)
 
-## 🔗 Live link
-
-**[https://foodyville.netlify.app/](https://foodyville.netlify.app/)**
-
-
 ## 📓Features 
 - Implemented dynamic routing using *react-router-dom*
 - Utilized *Redux Toolkit* for efficient cart management
@@ -34,7 +29,7 @@ To set up the Food Ordering App project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mikasa-404/food-ordering-app
+    https://github.com/Yashverma849/food-ordering-web.git
     ```
 
 2. Navigate to the project directory:
