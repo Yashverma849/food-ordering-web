@@ -2941,7 +2941,7 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$f00f.prelude(module);
 
 try {
-// import "../index.css"
+// Import necessary packages and components
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
@@ -2979,29 +2979,30 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                 fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 27,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 26,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 24,
+        lineNumber: 23,
         columnNumber: 5
     }, undefined);
 };
 _c6 = AppLayout;
+// Define the app router with routes
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
@@ -3106,7 +3107,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                             lineNumber: 86,
                             columnNumber: 13
                         }, undefined),
-                        " // Update to use LoginSignup component"
+                        " "
                     ]
                 }, void 0, true, {
                     fileName: "src/App.js",
@@ -3124,7 +3125,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                             lineNumber: 94,
                             columnNumber: 13
                         }, undefined),
-                        " // Reuse LoginSignup for signup"
+                        " "
                     ]
                 }, void 0, true, {
                     fileName: "src/App.js",
@@ -3140,6 +3141,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         }, undefined)
     }
 ]);
+// Render the app to the DOM
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: appRouter
@@ -38864,7 +38866,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../imgs/logo.png":"kCfrM","react-router-dom":"9xmpe","react-redux":"bdVon","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kCfrM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../imgs/logo.png":"kCfrM","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"bdVon"}],"kCfrM":[function(require,module,exports) {
 module.exports = require("c49f13c4fc0e06c").getBundleURL("aXMci") + "logo.c5dd6f41.png" + "?" + Date.now();
 
 },{"c49f13c4fc0e06c":"lgJ39"}],"lgJ39":[function(require,module,exports) {

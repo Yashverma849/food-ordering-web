@@ -1,4 +1,4 @@
-// import "../index.css"
+// Import necessary packages and components
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
@@ -10,14 +10,13 @@ import Body from "./components/Body";
 import Error from "./components/Error";
 import Shimmer from "./components/Shimmer";
 
-
 // Lazy load components
 const About = lazy(() => import("./components/About"));
 const RestaurantMenu = lazy(() => import("./components/RestaurantMenu"));
 const Cart = lazy(() => import("./components/Cart"));
 const OrderPlaced = lazy(() => import("./components/Orderplaced"));
 const Help = lazy(() => import("./components/Help"));
-const LoginSignup = lazy(() => import("./components/LoginSignup"))
+const LoginSignup = lazy(() => import("./components/LoginSignup"));
 
 const AppLayout = () => {
   return (
@@ -30,6 +29,7 @@ const AppLayout = () => {
   );
 };
 
+// Define the app router with routes
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -83,7 +83,7 @@ const appRouter = createBrowserRouter([
         path: "/login",
         element: (
           <Suspense fallback={<Shimmer />}>
-            <LoginSignup /> // Update to use LoginSignup component
+            <LoginSignup /> {/* Use LoginSignup for login */}
           </Suspense>
         ),
       },
@@ -91,7 +91,7 @@ const appRouter = createBrowserRouter([
         path: "/signup",
         element: (
           <Suspense fallback={<Shimmer />}>
-            <LoginSignup /> // Reuse LoginSignup for signup
+            <LoginSignup /> {/* Reuse LoginSignup for signup */}
           </Suspense>
         ),
       },
@@ -100,6 +100,6 @@ const appRouter = createBrowserRouter([
   },
 ]);
 
+// Render the app to the DOM
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(<RouterProvider router={appRouter} />);

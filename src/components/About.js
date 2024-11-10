@@ -36,7 +36,7 @@ const About = (props) => {
             </p>
           </div>
         </div>
-        <div className="m-5 bg-red-900 text-white text-center">Created by <a className="font-medium underline" href="https://github.com/mikasa-404">Priya Jha</a></div>
+        <div className="m-5 bg-red-900 text-white text-center">Created by <a className="font-medium underline" href="https://github.com/mikasa-404">Foodie</a></div>
 
       </div>
     </div>
